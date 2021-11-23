@@ -15,13 +15,17 @@ import { MatInputModule } from  '@angular/material/input';
 import { MatSnackBarModule } from  '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductoService } from './services/producto.service';
+import { ShowClienteComponent } from './components/cliente/show-cliente/show-cliente.component';
+import { CreateClienteComponent } from './components/cliente/create-cliente/create-cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ShowProductoComponent,
-    CreateProductoComponent
+    CreateProductoComponent,
+    ShowClienteComponent,
+    CreateClienteComponent
   ],
   imports: [
     BrowserModule,
