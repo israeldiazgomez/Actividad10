@@ -18,6 +18,9 @@ import { ProductoService } from './services/producto.service';
 import { ShowClienteComponent } from './components/cliente/show-cliente/show-cliente.component';
 import { CreateClienteComponent } from './components/cliente/create-cliente/create-cliente.component';
 import { ClienteService } from './services/cliente.service';
+import { ShowProveedorComponent } from './components/proveedor/show-proveedor/show-proveedor.component';
+import { CreateProveedorComponent } from './components/proveedor/create-proveedor/create-proveedor.component';
+import { ProveedorService } from './services/proveedor.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { ClienteService } from './services/cliente.service';
     ShowProductoComponent,
     CreateProductoComponent,
     ShowClienteComponent,
-    CreateClienteComponent
+    CreateClienteComponent,
+    ShowProveedorComponent,
+    CreateProveedorComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,8 @@ import { ClienteService } from './services/cliente.service';
   ],
   providers: [
     ProductoService,
-    ClienteService
+    ClienteService,
+    ProveedorService 
   ],
   bootstrap: [AppComponent]
 })

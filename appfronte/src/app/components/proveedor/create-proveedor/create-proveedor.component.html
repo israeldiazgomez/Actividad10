@@ -1,0 +1,49 @@
+<div class="container">
+
+    
+    <form [formGroup] = "formulario" novalidate (ngSubmit)= "onSubmit()"> 
+
+     <div> 
+        <mat-form-field appearance="legacy">
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder=" ingrese el nombre nombre" formControlName="nombre">
+            
+           
+          </mat-form-field>
+
+          <mat-form-field appearance="legacy">
+            <mat-label>Apellido</mat-label>
+            <input matInput placeholder="ingrese el apellido" formControlName="apellido">
+            
+          </mat-form-field>  
+
+          <mat-form-field appearance="legacy">
+            <mat-label>Direccion</mat-label>
+            <input matInput placeholder="ingrese la direccion" formControlName="direccion">
+ 
+          </mat-form-field>  
+
+          <mat-form-field appearance="legacy">
+            <mat-label>Provincia</mat-label>
+            <input matInput placeholder="ingrese la provincia" formControlName="provincia">
+            
+          </mat-form-field>  
+
+          <mat-form-field appearance="legacy">
+            <mat-label>Telefono</mat-label>
+            <input matInput placeholder="ingrese el telefono" formControlName="telefono">
+            
+          </mat-form-field>  
+
+     </div>
+
+     <div> 
+        <button mat-icon-button type="submit" [disabled]="formulario.invalid"> 
+            <mat-icon>save</mat-icon>
+
+        </button>
+    </div>
+
+    </form>
+    
+</div> 
