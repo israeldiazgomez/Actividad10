@@ -8,6 +8,15 @@ import { ProveedorI } from '../models/ProveedorI';
   providedIn: 'root'
 })
 export class ProveedorService {
+   api_url= 'http://localhost:5000';
+    base_path = `${this.api_url}/proveedor`
+  
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
+  getAll(): Observable<ProveedorI[]>{
+    return this.http.get<ProveedorI[]>(this.base_path)
+  
+}
 }
