@@ -19,4 +19,7 @@ export class ProveedorService {
     return this.http.get<ProveedorI[]>(this.base_path)
   
 }
+create(data: ProveedorI): Observable<ProveedorI>{
+  return this.http.post<ProveedorI>(this.base_path, data)
+}
 }
