@@ -21,7 +21,7 @@ export class ClienteController{
            const dataCliente: ClienteI = await Cliente.create(cliente)
            res.json(dataCliente)
         } catch (error) {
-            
+            res.status(500).json(error)
         }
     }
 }

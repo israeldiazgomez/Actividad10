@@ -29,6 +29,7 @@ export class App {
 
     private routes(){
         this.routePrv.productoroutes.routes(this.app)
+        this.routePrv.clienteRoutes.routes(this.app)
     }
 
     async listen(){
