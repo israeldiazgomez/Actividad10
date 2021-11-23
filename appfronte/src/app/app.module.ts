@@ -20,6 +20,7 @@ import { CreateClienteComponent } from './components/cliente/create-cliente/crea
 import { ClienteService } from './services/cliente.service';
 import { ShowProveedorComponent } from './components/proveedor/show-proveedor/show-proveedor.component';
 import { CreateProveedorComponent } from './components/proveedor/create-proveedor/create-proveedor.component';
+import { ProveedorService } from './services/proveedor.service';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { CreateProveedorComponent } from './components/proveedor/create-proveedo
   ],
   providers: [
     ProductoService,
-    ClienteService
+    ClienteService,
+    ProveedorService 
   ],
   bootstrap: [AppComponent]
 })
