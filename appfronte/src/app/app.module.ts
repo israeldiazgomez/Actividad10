@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductoService } from './services/producto.service';
 import { ShowClienteComponent } from './components/cliente/show-cliente/show-cliente.component';
 import { CreateClienteComponent } from './components/cliente/create-cliente/create-cliente.component';
+import { ClienteService } from './services/cliente.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { CreateClienteComponent } from './components/cliente/create-cliente/crea
     BrowserAnimationsModule
   ],
   providers: [
-    ProductoService
+    ProductoService,
+    ClienteService
   ],
   bootstrap: [AppComponent]
 })
