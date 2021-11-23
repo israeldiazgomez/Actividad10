@@ -12,10 +12,46 @@ import { MatSnackBar} from '@angular/material/snack-bar';
   styleUrls: ['./create-proveedor.component.css']
 })
 export class CreateProveedorComponent implements OnInit {
+  public formulario: FormGroup = this.formBuilder.group({
+    nombre: ['', Validators.required],
+    apellido: ['', Validators.required],
+    direccion: ['', Validators.required],
+    provincia: ['', Validators.required],
+    telefono: ['', Validators.required]
+  }) 
 
-  constructor() { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private proveedorService: ProveedorService,
+    private snackBar: MatSnackBar,
+    private roter: Router
+  ) { }
 
   ngOnInit(): void {
+
+    
+  }
+
+  onSubmit(): void{
+    const formValue: ProveedorI = this.formulario.value;
+    this.proveedorService.create(formValue).subscribe(
+      () => {
+        this.snackBar.open(
+          'proveedor Creado ', 'ok', {
+            duration: 5000,
+          }
+        );
+        this.roter.navigateByUrl('proveedor');
+      },
+      err => {
+        this.snackBar.open(
+          'no se creó', 'ok',{
+            duration: 5000,
+          }
+        )
+      }
+    )
+
   }
 
 }
