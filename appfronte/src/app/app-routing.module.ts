@@ -2,6 +2,7 @@ import {  NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateClienteComponent } from './components/cliente/create-cliente/create-cliente.component';
 import { ShowClienteComponent } from './components/cliente/show-cliente/show-cliente.component';
+import { ShowIndexComponent } from './components/index/show-index/show-index.component';
 import { CreateProductoComponent } from './components/producto/create-producto/create-producto.component';
 import { ShowProductoComponent } from './components/producto/show-producto/show-producto.component';
 import { CreateProveedorComponent } from './components/proveedor/create-proveedor/create-proveedor.component';
@@ -35,6 +36,12 @@ const routes: Routes = [{
   
       path: "crearproveedor",
       component: CreateProveedorComponent
+     },
+
+     {
+  
+      path: "inicio",
+      component: ShowIndexComponent
      },
     
 ];
