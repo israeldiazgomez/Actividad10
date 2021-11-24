@@ -21,6 +21,7 @@ import { ClienteService } from './services/cliente.service';
 import { ShowProveedorComponent } from './components/proveedor/show-proveedor/show-proveedor.component';
 import { CreateProveedorComponent } from './components/proveedor/create-proveedor/create-proveedor.component';
 import { ProveedorService } from './services/proveedor.service';
+import { ShowIndexComponent } from './components/index/show-index/show-index.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProveedorService } from './services/proveedor.service';
     ShowClienteComponent,
     CreateClienteComponent,
     ShowProveedorComponent,
-    CreateProveedorComponent
+    CreateProveedorComponent,
+    ShowIndexComponent
   ],
   imports: [
     BrowserModule,
