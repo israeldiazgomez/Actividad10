@@ -8,7 +8,7 @@
       </button>
     </div>
 
-    <div> 
+    <div class="tabla"> 
         <table mat-table [dataSource]="proveedores" class="mat-elevation-z8">
 
             <!--- Note that these columns can be defined in any order.
@@ -56,6 +56,12 @@
             <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
           </table>
     </div>
+    
+    <footer class="footer">
+      <div class="flex-container">
+          <div class="flex-item"><img src="assets/img/Oso feliz (tecno).png" width="10%"></div>
+      </div>
+  </footer>
 
 </div>
 

@@ -1,0 +1,16 @@
+ul :hover{
+    background: #ADF0EA;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.8);
+    transition: all ease-in-out 300ms;
+}
+
+.header{
+    grid-area: header;
+    padding: 2px;
+    width: 100%;
+    background-color: #3DB2FF;
+    height: 70px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,17 @@
+h2{
+    color: #2B2E32;
+    text-align: center;
+}
+
+h3{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: #2B2E32;
+    text-align: center;
+}
+
+.grid-container >* {
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.8);
+}
